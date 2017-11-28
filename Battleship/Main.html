@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="Battleship/css/Main.css"/>
+		<link type="text/css" rel="stylesheet" href="Battleship/css/bootstrap-3.3.7-dist 2/css/bootstrap.min.css"/>
+			<link href="http://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+			<link href="http://fonts.googleapis.com/css?family=Great Vibes" rel="stylesheet" type="text/css">
+			<link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="Battleship/js/Main.js"></script>
+		<script type="text/javascript" src="Battleship/js/Request.js"></script>
+		<title> Battleship </title>
+	</head>
+	<body>
+		<div id="header">
+			<img id="logo" src="Battleship/BattleshipLogo.png"/>
+			<p>(Online Two Player)</p>
+			<img id="corner" src="Battleship/BPLogo.png">
+		</div>
+		<div id="player1">
+			<p class="player-name">Player Grid</p>
+			<table id="one">
+				<tr class="battlefield-row">
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-row">1</div>
+							<div class="marker marker-col">A</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-col">B</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-col">C</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-col">D</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-col">E</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-col">F</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-col">G</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-col">H</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-col">I</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-col">J</div>
+						</div>
+					</td>
+				</tr>
+				<tr class="battlefield-row">
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-row">2</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+				</tr>
+				<tr class="battlefield-row">
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-row">3</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+				</tr>
+				<tr class="battlefield-row">
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-row">4</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+				</tr>
+				<tr class="battlefield-row">
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-row">5</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+				</tr>
+				<tr class="battlefield-row">
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-row">6</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+				</tr>
+				<tr class="battlefield-row">
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-row">7</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+				</tr>
+				<tr class="battlefield-row">
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-row">8</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+				</tr>
+				<tr class="battlefield-row">
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-row">9</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+				</tr>
+				<tr class="battlefield-row">
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+							<div class="marker marker-row">10</div>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+					<td class="battlefield-space">
+						<div class="battlefield-cell-content">
+							<span class="z"></span>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="table2">
+			<div id="front">
+					<div id="roomID">
+						<input type="number" id="inputID" placeholder="Enter a four digit game number..."/>
+					</div>
+					<button type="button" id="join" class="btn btn-success" onclick="join(document.getElementById('inputID').value)">Join</button>
+					<button type="button" id="join-random" class="btn btn-success" onclick="joinRandom()">Join Random</button>
+			</div>
+			<div id="player2">
+				<p class="player-name">Opponent Grid</p>
+				<table id="two" class="battleship-table">
+					<tr class="battlefield-row">
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-row">1</div>
+								<div class="marker marker-col">A</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-col">B</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-col">C</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-col">D</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-col">E</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-col">F</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-col">G</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-col">H</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-col">I</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-col">J</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="battlefield-row">
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-row">2</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+					</tr>
+					<tr class="battlefield-row">
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-row">3</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+					</tr>
+					<tr class="battlefield-row">
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-row">4</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+					</tr>
+					<tr class="battlefield-row">
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-row">5</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+					</tr>
+					<tr class="battlefield-row">
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-row">6</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+					</tr>
+					<tr class="battlefield-row">
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-row">7</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+					</tr>
+					<tr class="battlefield-row">
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-row">8</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+					</tr>
+					<tr class="battlefield-row">
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-row">9</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+					</tr>
+					<tr class="battlefield-row">
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+								<div class="marker marker-row">10</div>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+						<td class="battlefield-space">
+							<div class="battlefield-cell-content">
+								<span class="z"></span>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="roomNumber">
+			<p>Room Number:</p>
+		</div>
+		<div id="footer">
+			<p>
+				
+			</p>
+		</div>
+	</body>
+</html>
